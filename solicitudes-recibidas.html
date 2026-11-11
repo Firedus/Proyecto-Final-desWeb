@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solicitudes recibidas | AMAC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+<a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+<header class="encabezado">
+<div class="ayuda"><div class="contenedor ayuda__interior">
+<svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg><p class="ayuda__texto">¿Necesitas ayuda? Llama a AMAC y una persona te atiende:<strong class="ayuda__telefono">(81) 0000 0000</strong></p>
+<a class="boton boton--primario" href="tel:+528100000000">Llamar ahora</a>
+</div></div>
+<div class="contenedor encabezado__barra">
+<a class="logo" href="index.html"><img class="logo__imagen" src="img/logo-amac.svg" alt="AMAC, Bolsa de Trabajo. Ir al inicio" width="230" height="48"></a>
+<nav class="navegacion" aria-label="Navegación principal"><ul class="navegacion__lista">
+<li class="navegacion__item"><a class="navegacion__enlace" href="empresa-vacantes.html"><svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"></path></svg><span>Mis vacantes</span></a></li>
+<li class="navegacion__item"><a class="navegacion__enlace" href="solicitudes-recibidas.html" aria-current="page"><svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"></path></svg><span>Solicitudes recibidas</span></a></li>
+<li class="navegacion__item navegacion__item--ayuda solo-movil"><a class="navegacion__enlace" href="tel:+528100000000"><svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg><span>Ayuda</span></a></li>
+</ul></nav>
+<div class="sesion">
+<p class="sesion__usuario solo-escritorio">Clínica San Ángel</p>
+<a class="boton boton--secundario boton--chico" href="login.html">Salir</a>
+</div>
+</div>
+</header>
+<main id="principal" class="principal"><div class="contenedor pila">
+<div class="encabezado-pagina">
+<h1>Solicitudes recibidas</h1>
+<p class="encabezado-pagina__texto">Revisa a las personas que se postularon a tus vacantes.</p>
+</div>
+<form class="panel" action="solicitudes-recibidas.html" method="get" aria-label="Filtrar solicitudes">
+<div class="campo-formulario">
+<label for="vacante">Vacante</label><select id="vacante" name="vacante"><option value="">Auxiliar de recepción (12 solicitudes)</option>
+<option>Auxiliar de recepción (12 solicitudes)</option>
+<option>Auxiliar de enfermería (8 solicitudes)</option>
+<option>Intendente (3 solicitudes)</option></select>
+</div>
+<div class="fila-filtros fila-filtros--3">
+<div class="campo-formulario">
+<label for="experiencia">Experiencia</label><select id="experiencia" name="experiencia"><option value="">Cualquiera</option>
+<option>Menos de 5 años</option>
+<option>De 5 a 10 años</option>
+<option>Más de 10 años</option></select>
+</div>
+<div class="campo-formulario">
+<label for="residencia">Lugar de residencia</label><select id="residencia" name="residencia"><option value="">Cualquiera</option>
+<option>Monterrey</option>
+<option>Guadalupe</option>
+<option>San Nicolás de los Garza</option>
+<option>Apodaca</option></select>
+</div>
+<div class="campo-formulario">
+<label for="estatus">Estatus</label><select id="estatus" name="estatus"><option value="">Todos</option>
+<option>Enviada</option>
+<option>En revisión</option>
+<option>Aceptada</option>
+<option>Rechazada</option></select>
+</div>
+<button class="boton boton--primario" type="submit">Filtrar</button>
+</div>
+</form>
+<p class="resultados" aria-live="polite">Mostrando 4 de 12 personas</p>
+<ul class="lista-tarjetas">
+<li><article class="tarjeta-fila">
+<div class="tarjeta-fila_datos">
+<h2 class="tarjeta-fila_titulo">María Elena Treviño Garza</h2>
+<p>Edad: 63 años</p>
+<p>Vive en: Guadalupe, N.L.</p>
+<p>Experiencia: 12 años como cajera en una tienda de abarrotes.</p>
+</div>
+<div class="tarjeta-fila_lado">
+<p class="estatus estatus--enviada"><span class="solo-lectores">Estatus: </span>Enviada</p>
+<div class="tarjeta-fila_acciones">
+<button class="boton boton--secundario" type="button">Ver perfil y CV<span class="solo-lectores"> de María Elena Treviño Garza</span></button><button class="boton boton--primario" type="button">Aceptar<span class="solo-lectores"> a María Elena Treviño Garza</span></button><button class="boton boton--peligro" type="button">Rechazar<span class="solo-lectores"> a María Elena Treviño Garza</span></button>
+</div>
+</div>
+</article></li>
+<li><article class="tarjeta-fila">
+<div class="tarjeta-fila_datos">
+<h2 class="tarjeta-fila_titulo">José Luis Ramírez Soto</h2>
+<p>Edad: 58 años</p>
+<p>Vive en: San Nicolás de los Garza</p>
+<p>Experiencia: 8 años en atención a clientes.</p>
+</div>
+<div class="tarjeta-fila_lado">
+<p class="estatus estatus--revision"><span class="solo-lectores">Estatus: </span>En revisión</p>
+<div class="tarjeta-fila_acciones">
+<button class="boton boton--secundario" type="button">Ver perfil y CV<span class="solo-lectores"> de José Luis Ramírez Soto</span></button><button class="boton boton--primario" type="button">Aceptar<span class="solo-lectores"> a José Luis Ramírez Soto</span></button><button class="boton boton--peligro" type="button">Rechazar<span class="solo-lectores"> a José Luis Ramírez Soto</span></button>
+</div>
+</div>
+</article></li>
+<li><article class="tarjeta-fila">
+<div class="tarjeta-fila_datos">
+<h2 class="tarjeta-fila_titulo">Rosa Elena Salinas Vega</h2>
+<p>Edad: 66 años</p>
+<p>Vive en: Monterrey, Centro</p>
+<p>Experiencia: 20 años como recepcionista en un consultorio.</p>
+</div>
+<div class="tarjeta-fila_lado">
+<p class="estatus estatus--aceptada"><span class="solo-lectores">Estatus: </span>Aceptada</p>
+<div class="tarjeta-fila_acciones">
+<button class="boton boton--secundario" type="button">Ver perfil y CV<span class="solo-lectores"> de Rosa Elena Salinas Vega</span></button><button class="boton boton--peligro" type="button">Rechazar<span class="solo-lectores"> a Rosa Elena Salinas Vega</span></button>
+</div>
+</div>
+</article></li>
+<li><article class="tarjeta-fila">
+<div class="tarjeta-fila_datos">
+<h2 class="tarjeta-fila_titulo">Ramón de la Garza Cantú</h2>
+<p>Edad: 61 años</p>
+<p>Vive en: Apodaca</p>
+<p>Experiencia: 5 años como vigilante.</p>
+</div>
+<div class="tarjeta-fila_lado">
+<p class="estatus estatus--rechazada"><span class="solo-lectores">Estatus: </span>Rechazada</p>
+<div class="tarjeta-fila_acciones">
+<button class="boton boton--secundario" type="button">Ver perfil y CV<span class="solo-lectores"> de Ramón de la Garza Cantú</span></button><button class="boton boton--primario" type="button">Aceptar<span class="solo-lectores"> a Ramón de la Garza Cantú</span></button>
+</div>
+</div>
+</article></li>
+</ul>
+</div></main>
+<footer class="pie"><div class="contenedor">
+<p class="pie__lema">Envejecer es vivir.</p>
+<p class="pie__texto">AMAC · asociAMayores A.C. — Bolsa de Trabajo</p>
+</div></footer>
+</body>
+</html>

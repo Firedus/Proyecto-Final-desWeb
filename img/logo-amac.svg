@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 48" width="230" height="48" role="img" aria-label="AMAC">
+  <title>AMAC</title>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 32 L11 22 L18 31 L25 17 L32 31 L39 22 L47 32" stroke="#ff815c" stroke-width="4.5"/>
+    <g stroke="#202945" stroke-width="3.5">
+      <path d="M72 38 L86 10 L100 38 M77 28 H95"/>
+      <path d="M116 38 V10 L132 30 L148 10 V38"/>
+      <path d="M164 38 L178 10 L192 38 M169 28 H187"/>
+      <path d="M224 15 A15 15 0 1 0 224 33"/>
+    </g>
+  </g>
+</svg>

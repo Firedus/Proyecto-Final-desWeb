@@ -1,0 +1,602 @@
+
+/* Botón */
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: var(--alto-boton);
+  padding: 0.75rem 2rem;
+  border: 2px solid transparent;
+  border-radius: var(--radio);
+  font-size: var(--texto-base);
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boton--chico { white-space: nowrap; }
+
+.boton--primario {
+  background: var(--color-primario);
+  border-color: var(--color-primario);
+  color: #ffffff;
+}
+.boton--primario:hover { background: var(--color-primario-oscuro); }
+
+.boton--secundario {
+  background: var(--color-fondo);
+  border-color: var(--color-primario);
+  color: var(--color-primario);
+}
+.boton--secundario:hover { background: var(--color-fondo-suave); }
+
+.boton--peligro {
+  background: var(--color-fondo);
+  border-color: var(--color-error);
+  color: var(--color-error);
+}
+.boton--peligro:hover { background: var(--color-error-fondo); }
+
+.boton--chico {
+  min-height: 3rem;
+  padding: 0.5rem 1.25rem;
+  font-size: var(--texto-pequeno);
+}
+
+.boton--bloque {
+  display: flex;
+  width: 100%;
+}
+
+.grupo-botones {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+}
+
+@media (min-width: 768px) {
+  .grupo-botones { flex-direction: row; flex-wrap: wrap; }
+}
+
+/* Etiqueta de categoría */
+.etiqueta {
+  align-self: flex-start;
+  padding: 0.25rem 0.875rem;
+  border-radius: 999px;
+  background: var(--color-azul-claro);
+  font-size: var(--texto-pequeno);
+  font-weight: 600;
+}
+
+/*  Estatus */
+.estatus {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: flex-start;
+  padding: 0.375rem 1rem;
+  border-radius: 999px;
+  background: var(--color-azul-claro);
+  color: var(--color-texto);
+  font-size: var(--texto-pequeno);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.estatus::before {
+  content: "";
+  flex: none;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.estatus--revision,
+.estatus--pausa {
+  background: var(--color-durazno);
+}
+
+.estatus--aceptada,
+.estatus--publicada {
+  background: var(--color-exito-fondo);
+  color: var(--color-exito);
+}
+
+.estatus--rechazada {
+  background: var(--color-error-fondo);
+  color: var(--color-error);
+}
+
+.estatus--cancelada,
+.estatus--cerrada {
+  background: var(--color-deshabilitado);
+  color: var(--color-deshabilitado-texto);
+}
+
+/* Mensaje */
+.mensaje {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--espacio-m);
+  padding: 1.25rem;
+  border: 2px solid var(--color-primario);
+  border-radius: var(--radio);
+  background: var(--color-azul-claro);
+}
+
+.mensaje .icono {
+  width: 2rem;
+  height: 2rem;
+}
+
+.mensaje__titulo {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.mensaje--exito {
+  background: var(--color-exito-fondo);
+  border-color: var(--color-exito);
+}
+.mensaje--exito .mensaje__titulo,
+.mensaje--exito .icono { color: var(--color-exito); }
+
+.mensaje--error {
+  background: var(--color-error-fondo);
+  border-color: var(--color-error);
+}
+.mensaje--error .mensaje__titulo,
+.mensaje--error .icono { color: var(--color-error); }
+
+.mensaje--aviso {
+  background: var(--color-durazno);
+  border-color: var(--color-acento);
+}
+
+/*  Panel */
+.panel {
+  padding: var(--espacio-l);
+  border-radius: var(--radio-grande);
+  background: var(--color-fondo-suave);
+}
+
+/* Tarjeta de vacante */
+.tarjeta-vacante {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  padding: var(--espacio-l);
+  background: var(--color-fondo);
+  border: 2px solid var(--color-borde);
+  border-radius: var(--radio-grande);
+  box-shadow: var(--sombra);
+}
+
+.tarjeta-vacante_titulo {
+  font-family: var(--fuente-titulos);
+  font-size: var(--texto-h2);
+}
+
+.tarjeta-vacante_empresa {
+  font-weight: 600;
+  color: var(--color-texto-suave);
+}
+
+.tarjeta-vacante_datos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.tarjeta-vacante_datos li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tarjeta-vacante .boton { margin-top: auto; }
+
+/* Tarjeta en fila */
+.tarjeta-fila {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+  padding: var(--espacio-l);
+  background: var(--color-fondo);
+  border: 2px solid var(--color-borde);
+  border-radius: var(--radio-grande);
+  box-shadow: var(--sombra);
+}
+
+.tarjeta-fila_datos {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.tarjeta-fila_titulo {
+  font-family: var(--fuente-base);
+  font-size: var(--texto-h3);
+  font-weight: 600;
+}
+
+.tarjeta-fila_fecha {
+  font-size: var(--texto-pequeno);
+  color: var(--color-texto-suave);
+}
+
+.tarjeta-fila_lado {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tarjeta-fila_acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tarjeta-fila_acciones .boton { width: 100%; }
+
+.lista-tarjetas {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-l);
+  list-style: none;
+}
+
+@media (min-width: 1024px) {
+  .tarjeta-fila {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .tarjeta-fila_acciones { flex-direction: row; flex-wrap: wrap; }
+  .tarjeta-fila_acciones .boton { width: auto; }
+}
+
+/*  Resumen con números (panel de la empresa) */
+.dato-resumen {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-m);
+  padding: 1.25rem;
+  border-radius: var(--radio-grande);
+  background: var(--color-fondo-suave);
+}
+
+.dato-resumen_numero {
+  font-family: var(--fuente-titulos);
+  font-size: 2.375rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.dato-resumen_texto { font-weight: 600; }
+
+/*  Formularios */
+.campo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.campo-formulario label { font-weight: 600; }
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+  width: 100%;
+  min-height: var(--alto-boton);
+  padding: 0.75rem 1rem;
+  background: var(--color-fondo);
+  border: 2px solid var(--color-borde-campo);
+  border-radius: 0.625rem;
+}
+
+.campo-formulario textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.campo-formulario input::placeholder { color: var(--color-borde-campo); }
+
+.campo-formulario_ayuda {
+  font-size: var(--texto-pequeno);
+  color: var(--color-texto-suave);
+}
+
+.campo-formulario_error {
+  display: none;
+  font-size: var(--texto-pequeno);
+  font-weight: 600;
+  color: var(--color-error);
+}
+
+.campo-formulario--error input,
+.campo-formulario--error select {
+  border-color: var(--color-error);
+  border-width: 3px;
+}
+.campo-formulario--error .campo-formulario_error { display: block; }
+
+/* Sección numerada de un formulario largo */
+.formulario-largo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-l);
+  counter-reset: seccion;
+}
+
+.seccion-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-l);
+  padding: var(--espacio-l);
+  background: var(--color-fondo);
+  border: 2px solid var(--color-borde);
+  border-radius: var(--radio-grande);
+}
+
+.seccion-formulario_titulo {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-m);
+}
+
+.seccion-formulario_titulo::before {
+  counter-increment: seccion;
+  content: counter(seccion);
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--color-primario);
+  color: #ffffff;
+  font-family: var(--fuente-base);
+  font-size: var(--texto-h3);
+  font-weight: 600;
+}
+
+/* Grupo de opciones */
+.grupo-opciones {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.grupo-opciones legend {
+  padding: 0;
+  margin-bottom: 0.625rem;
+  font-weight: 600;
+}
+
+.grupo-opciones_lista {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espacio-m);
+}
+
+@media (min-width: 768px) {
+  .grupo-opciones_lista { grid-template-columns: repeat(2, 1fr); }
+}
+
+.opcion { position: relative; }
+
+.opcion_radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.opcion_etiqueta {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-m);
+  min-height: var(--alto-boton);
+  padding: 0.875rem 1.25rem;
+  background: var(--color-fondo);
+  border: 2px solid var(--color-borde-campo);
+  border-radius: var(--radio);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.opcion_etiqueta::before {
+  content: "";
+  flex: none;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 3px solid var(--color-primario);
+  border-radius: 50%;
+  background: var(--color-fondo);
+}
+
+.opcion_radio:checked + .opcion_etiqueta {
+  background: var(--color-azul-claro);
+  border: 3px solid var(--color-primario);
+}
+
+.opcion_radio:checked + .opcion_etiqueta::before {
+  background: radial-gradient(circle, var(--color-primario) 45%, var(--color-fondo) 50%);
+}
+
+.opcion_radio:focus-visible + .opcion_etiqueta {
+  outline: 3px solid var(--color-foco);
+  outline-offset: 3px;
+}
+
+/* Casilla de verificación */
+.casilla {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--espacio-m);
+}
+
+.casilla input {
+  flex: none;
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  accent-color: var(--color-primario);
+}
+
+/* Listas con palomita y pasos numerados */
+.lista-check {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.lista-check li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.lista-check .icono { margin-top: 0.125rem; }
+
+.pasos {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+  list-style: none;
+  counter-reset: paso;
+}
+
+.pasos li {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-m);
+  counter-increment: paso;
+}
+
+.pasos li::before {
+  content: counter(paso);
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: var(--color-primario);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/*  Detalle de vacante */
+.datos-vacante {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: var(--espacio-l);
+  border-radius: var(--radio-grande);
+  background: var(--color-fondo-suave);
+  list-style: none;
+}
+
+.datos-vacante_item {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.datos-vacante_item .icono {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.datos-vacante_etiqueta {
+  display: block;
+  font-size: var(--texto-pequeno);
+  color: var(--color-texto-suave);
+}
+
+.bloque-texto {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);
+}
+
+.panel-postular {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+  padding: var(--espacio-l);
+  background: var(--color-fondo-suave);
+  border: 2px solid var(--color-primario);
+  border-radius: var(--radio-grande);
+}
+
+.panel-postular_nota {
+  font-size: var(--texto-pequeno);
+  color: var(--color-texto-suave);
+}
+
+/* Inicio de sesión */
+.bienvenida {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-l);
+  padding: var(--espacio-xl);
+  border-radius: var(--radio-grande);
+  background: var(--color-azul-claro);
+}
+
+.bienvenida .lista-check { font-weight: 600; }
+
+/*  Línea separadora */
+.separador {
+  width: 100%;
+  height: 2px;
+  margin: 0;
+  border: 0;
+  background: var(--color-borde);
+}
+
+/* Ajustes extra  */
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.resultados {
+  font-size: var(--texto-h3);
+  font-weight: 600;
+}
+
+.encabezado-pagina__empresa {
+  font-size: var(--texto-h3);
+  font-weight: 600;
+  color: var(--color-texto-suave);
+}
+
+.formulario-columna {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+
+.bienvenida { display: none; }
+
+@media (min-width: 1024px) {
+  .bienvenida { display: flex; }
+}
+
+/* En el panel angosto de "Postularme" las opciones van una debajo de otra */
+.panel-postular .grupo-opciones_lista { grid-template-columns: 1fr; }

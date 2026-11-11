@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mis solicitudes | AMAC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+<a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+<header class="encabezado">
+<div class="ayuda"><div class="contenedor ayuda__interior">
+<svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg><p class="ayuda__texto">¿Necesitas ayuda? Llama a AMAC y una persona te atiende:<strong class="ayuda__telefono">(81) 0000 0000</strong></p>
+<a class="boton boton--primario" href="tel:+528100000000">Llamar ahora</a>
+</div></div>
+<div class="contenedor encabezado__barra">
+<a class="logo" href="index.html"><img class="logo__imagen" src="img/logo-amac.svg" alt="AMAC, Bolsa de Trabajo. Ir al inicio" width="230" height="48"></a>
+<nav class="navegacion" aria-label="Navegación principal"><ul class="navegacion__lista">
+<li class="navegacion__item"><a class="navegacion__enlace" href="index.html"><svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"></path></svg><span>Vacantes</span></a></li>
+<li class="navegacion__item"><a class="navegacion__enlace" href="mis-solicitudes.html" aria-current="page"><svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"></rect><path d="M9 8h6M9 12h6M9 16h4"></path></svg><span>Mis solicitudes</span></a></li>
+<li class="navegacion__item navegacion__item--ayuda solo-movil"><a class="navegacion__enlace" href="tel:+528100000000"><svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg><span>Ayuda</span></a></li>
+</ul></nav>
+<div class="sesion">
+<p class="sesion__usuario solo-escritorio">Hola, María Elena</p>
+<a class="boton boton--secundario boton--chico" href="login.html">Salir</a>
+</div>
+</div>
+</header>
+<main id="principal" class="principal"><div class="contenedor pila">
+<div class="encabezado-pagina">
+<h1>Mis solicitudes</h1>
+<p class="encabezado-pagina__texto">Aquí ves a qué vacantes te postulaste y cómo va cada una.</p>
+</div>
+<div class="mensaje mensaje--info">
+<svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5v.5"></path></svg><div>
+<p class="mensaje__titulo">Te avisaremos por correo</p>
+<p>Cada vez que una empresa cambie el estatus de tu solicitud, te llegará un aviso.</p>
+</div>
+</div>
+<ul class="lista-tarjetas">
+<li><article class="tarjeta-fila">
+<div class="tarjeta-fila_datos">
+<h2 class="tarjeta-fila_titulo">Auxiliar de recepción</h2>
+<p>Clínica San Ángel</p>
+<p class="tarjeta-fila_fecha">Enviada el <time datetime="2026-10-27">27 de octubre de 2026</time></p>
+</div>
+<div class="tarjeta-fila_lado"><p class="estatus estatus--enviada"><span class="solo-lectores">Estatus: </span>Enviada</p></div>
+<div class="tarjeta-fila_acciones"><button class="boton boton--peligro" type="button">Cancelar solicitud<span class="solo-lectores"> de Auxiliar de recepción</span></button></div>
+</article></li>
+<li><article class="tarjeta-fila">
+<div class="tarjeta-fila_datos">
+<h2 class="tarjeta-fila_titulo">Cajero(a) de tienda</h2>
+<p>Abarrotes La Esperanza</p>
+<p class="tarjeta-fila_fecha">Enviada el <time datetime="2026-10-22">22 de octubre de 2026</time></p>
+</div>
+<div class="tarjeta-fila_lado"><p class="estatus estatus--revision"><span class="solo-lectores">Estatus: </span>En revisión</p></div>
+<div class="tarjeta-fila_acciones"><button class="boton boton--peligro" type="button">Cancelar solicitud<span class="solo-lectores"> de Cajero(a) de tienda</span></button></div>
+</article></li>
+<li><article class="tarjeta-fila">
+<div class="tarjeta-fila_datos">
+<h2 class="tarjeta-fila_titulo">Cuidador(a) de personas</h2>
+<p>Casa Hogar Mirador</p>
+<p class="tarjeta-fila_fecha">Enviada el <time datetime="2026-10-15">15 de octubre de 2026</time></p>
+</div>
+<div class="tarjeta-fila_lado"><p class="estatus estatus--aceptada"><span class="solo-lectores">Estatus: </span>Aceptada</p></div>
+<div class="tarjeta-fila_acciones"><button class="boton boton--primario" type="button">Confirmar si me contrataron<span class="solo-lectores"> en Cuidador(a) de personas</span></button></div>
+</article></li>
+<li><article class="tarjeta-fila">
+<div class="tarjeta-fila_datos">
+<h2 class="tarjeta-fila_titulo">Auxiliar de almacén</h2>
+<p>Papelería Regia</p>
+<p class="tarjeta-fila_fecha">Enviada el <time datetime="2026-10-03">3 de octubre de 2026</time></p>
+</div>
+<div class="tarjeta-fila_lado"><p class="estatus estatus--rechazada"><span class="solo-lectores">Estatus: </span>Rechazada</p></div>
+
+</article></li>
+</ul>
+</div></main>
+<footer class="pie"><div class="contenedor">
+<p class="pie__lema">Envejecer es vivir.</p>
+<p class="pie__texto">AMAC · asociAMayores A.C. — Bolsa de Trabajo</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crear mi cuenta | AMAC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+<a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+<header class="encabezado">
+<div class="ayuda"><div class="contenedor ayuda__interior">
+<svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg><p class="ayuda__texto">¿Necesitas ayuda? Llama a AMAC y una persona te atiende:<strong class="ayuda__telefono">(81) 0000 0000</strong></p>
+<a class="boton boton--primario" href="tel:+528100000000">Llamar ahora</a>
+</div></div>
+<div class="contenedor encabezado__barra">
+<a class="logo" href="index.html"><img class="logo__imagen" src="img/logo-amac.svg" alt="AMAC, Bolsa de Trabajo. Ir al inicio" width="230" height="48"></a>
+<nav class="navegacion" aria-label="Navegación principal"><ul class="navegacion__lista">
+<li class="navegacion__item"><a class="navegacion__enlace" href="index.html"><svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"></path></svg><span>Vacantes</span></a></li>
+<li class="navegacion__item"><a class="navegacion__enlace" href="login.html"><svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg><span>Entrar</span></a></li>
+<li class="navegacion__item solo-escritorio"><a class="navegacion__enlace" href="registro-candidato.html" aria-current="page"><svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="8" r="4"></circle><path d="M2.5 21a7.5 7.5 0 0 1 15 0M19 8v6M16 11h6"></path></svg><span>Crear cuenta</span></a></li>
+<li class="navegacion__item solo-escritorio"><a class="navegacion__enlace" href="registro-empresa.html"><svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"></rect><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"></path></svg><span>Soy empresa</span></a></li>
+<li class="navegacion__item navegacion__item--ayuda solo-movil"><a class="navegacion__enlace" href="tel:+528100000000"><svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg><span>Ayuda</span></a></li>
+</ul></nav>
+<div class="sesion"><a class="boton boton--secundario boton--chico solo-movil" href="registro-candidato.html">Crear cuenta</a></div>
+</div>
+</header>
+<main id="principal" class="principal"><div class="contenedor pila">
+<a class="boton boton--secundario" href="login.html"><svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>Volver a entrar</a><div class="encabezado-pagina">
+<h1>Crear mi cuenta</h1>
+<p class="encabezado-pagina__texto">Son 3 partes sencillas. Puedes llamar a AMAC en cualquier momento si necesitas ayuda.</p>
+</div>
+<form class="formulario-largo" action="registro-enviado.html" method="get">
+<section class="seccion-formulario"><h2 class="seccion-formulario_titulo">Tus datos</h2>
+<div class="fila-campos fila-campos--3">
+<div class="campo-formulario">
+<label for="nombre">Nombre(s)</label><input type="text" id="nombre" name="nombre" autocomplete="given-name" placeholder="Ej. María Elena" required>
+</div>
+<div class="campo-formulario">
+<label for="paterno">Apellido paterno</label><input type="text" id="paterno" name="paterno" autocomplete="family-name" placeholder="Ej. Treviño" required>
+</div>
+<div class="campo-formulario">
+<label for="materno">Apellido materno</label><input type="text" id="materno" name="materno" placeholder="Ej. Garza" required>
+</div>
+</div>
+<div class="fila-campos fila-campos--3">
+<div class="campo-formulario">
+<label for="edad">Edad</label><input type="number" id="edad" name="edad" placeholder="Ej. 63" required min="18" max="120">
+</div>
+<div class="campo-formulario">
+<label for="sexo">Sexo</label><select id="sexo" name="sexo" required><option value="">Elige una opción</option>
+<option>Mujer</option>
+<option>Hombre</option>
+<option>Prefiero no decirlo</option></select>
+</div>
+<div class="campo-formulario">
+<label for="estudios">Máximo nivel de estudios</label><select id="estudios" name="estudios" required><option value="">Elige una opción</option>
+<option>Sin estudios</option>
+<option>Primaria</option>
+<option>Secundaria</option>
+<option>Preparatoria</option>
+<option>Licenciatura</option>
+<option>Posgrado</option></select>
+</div>
+</div>
+<div class="fila-campos fila-campos--2">
+<div class="campo-formulario">
+<label for="email">Correo electrónico</label><p class="campo-formulario_ayuda" id="email-ayuda">Escribe al menos uno: correo o celular</p>
+<input type="email" id="email" name="email" autocomplete="email" placeholder="ejemplo@correo.com" aria-describedby="email-ayuda">
+</div>
+<div class="campo-formulario">
+<label for="celular">Teléfono celular</label><p class="campo-formulario_ayuda" id="celular-ayuda">10 dígitos</p>
+<input type="tel" id="celular" name="celular" autocomplete="tel" placeholder="81 1234 5678" aria-describedby="celular-ayuda">
+</div>
+</div>
+<fieldset class="grupo-opciones">
+<legend>¿Por dónde prefieres que te contactemos?</legend>
+<div class="grupo-opciones_lista">
+<div class="opcion">
+<input class="opcion_radio" type="radio" id="preferido-celular" name="preferido" value="celular" checked><label class="opcion_etiqueta" for="preferido-celular">Teléfono celular</label>
+</div>
+<div class="opcion">
+<input class="opcion_radio" type="radio" id="preferido-correo" name="preferido" value="correo"><label class="opcion_etiqueta" for="preferido-correo">Correo electrónico</label>
+</div>
+</div>
+</fieldset>
+<div class="fila-campos fila-campos--2">
+<div class="campo-formulario">
+<label for="clave">Contraseña</label><p class="campo-formulario_ayuda" id="clave-ayuda">Mínimo 8 caracteres</p>
+<input type="password" id="clave" name="clave" autocomplete="new-password" required aria-describedby="clave-ayuda" minlength="8">
+</div>
+<div class="campo-formulario">
+<label for="clave2">Repetir contraseña</label><p class="campo-formulario_ayuda" id="clave2-ayuda">Escríbela otra vez</p>
+<input type="password" id="clave2" name="clave2" autocomplete="new-password" required aria-describedby="clave2-ayuda">
+</div>
+</div>
+<div class="fila-campos fila-campos--2">
+<div class="campo-formulario">
+<label for="calle">Calle y número</label><input type="text" id="calle" name="calle" autocomplete="street-address" placeholder="Ej. Av. Juárez 123" required>
+</div>
+<div class="campo-formulario">
+<label for="colonia">Colonia</label><input type="text" id="colonia" name="colonia" placeholder="Ej. Centro" required>
+</div>
+</div></section>
+<section class="seccion-formulario"><h2 class="seccion-formulario_titulo">Tu experiencia y habilidades</h2>
+<div class="campo-formulario">
+<label for="experiencia">Experiencia laboral</label><p class="campo-formulario_ayuda" id="experiencia-ayuda">Cuéntanos en qué has trabajado</p>
+<input type="text" id="experiencia" name="experiencia" placeholder="Ej. 10 años como cajera en una tienda" required aria-describedby="experiencia-ayuda">
+</div>
+<div class="campo-formulario">
+<label for="habilidades">Habilidades</label><p class="campo-formulario_ayuda" id="habilidades-ayuda">Cosas que sabes hacer bien</p>
+<input type="text" id="habilidades" name="habilidades" placeholder="Ej. atención a clientes, manejo de caja" required aria-describedby="habilidades-ayuda">
+</div>
+<div class="campo-formulario">
+<label for="cv">Mi currículum (CV)</label><p class="campo-formulario_ayuda" id="cv-ayuda">Archivo PDF o Word, de máximo 5 MB.</p>
+<input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" aria-describedby="cv-ayuda">
+</div></section>
+<section class="seccion-formulario"><h2 class="seccion-formulario_titulo">Confirmar y terminar</h2>
+<div class="casilla">
+<input type="checkbox" id="terminos" name="terminos" required><label for="terminos">Leí y acepto los términos y condiciones</label>
+</div>
+<div class="casilla">
+<input type="checkbox" id="privacidad" name="privacidad" required><label for="privacidad">Leí y acepto el aviso de privacidad</label>
+</div>
+<div class="mensaje mensaje--aviso">
+<svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><div>
+<p class="mensaje__titulo">Un paso más antes de postularte</p>
+<p>AMAC revisará tu registro. Mientras tanto puedes ver vacantes, pero todavía no podrás postularte. Te avisaremos el resultado.</p>
+</div>
+</div>
+<div class="grupo-botones">
+<button class="boton boton--primario" type="submit">Crear mi cuenta</button><a class="boton boton--secundario" href="login.html">Cancelar</a>
+</div></section>
+</form>
+</div></main>
+<footer class="pie"><div class="contenedor">
+<p class="pie__lema">Envejecer es vivir.</p>
+<p class="pie__texto">AMAC · asociAMayores A.C. — Bolsa de Trabajo</p>
+</div></footer>
+</body>
+</html>

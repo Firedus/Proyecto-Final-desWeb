@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mis vacantes | AMAC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+<a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+<header class="encabezado">
+<div class="ayuda"><div class="contenedor ayuda__interior">
+<svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg><p class="ayuda__texto">¿Necesitas ayuda? Llama a AMAC y una persona te atiende:<strong class="ayuda__telefono">(81) 0000 0000</strong></p>
+<a class="boton boton--primario" href="tel:+528100000000">Llamar ahora</a>
+</div></div>
+<div class="contenedor encabezado__barra">
+<a class="logo" href="index.html"><img class="logo__imagen" src="img/logo-amac.svg" alt="AMAC, Bolsa de Trabajo. Ir al inicio" width="230" height="48"></a>
+<nav class="navegacion" aria-label="Navegación principal"><ul class="navegacion__lista">
+<li class="navegacion__item"><a class="navegacion__enlace" href="empresa-vacantes.html" aria-current="page"><svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"></path></svg><span>Mis vacantes</span></a></li>
+<li class="navegacion__item"><a class="navegacion__enlace" href="solicitudes-recibidas.html"><svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"></path></svg><span>Solicitudes recibidas</span></a></li>
+<li class="navegacion__item navegacion__item--ayuda solo-movil"><a class="navegacion__enlace" href="tel:+528100000000"><svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg><span>Ayuda</span></a></li>
+</ul></nav>
+<div class="sesion">
+<p class="sesion__usuario solo-escritorio">Clínica San Ángel</p>
+<a class="boton boton--secundario boton--chico" href="login.html">Salir</a>
+</div>
+</div>
+</header>
+<main id="principal" class="principal"><div class="contenedor pila">
+<div class="encabezado-con-accion">
+<div class="encabezado-pagina">
+<h1>Mis vacantes</h1>
+<p class="encabezado-pagina__texto">Aquí publicas y cuidas tus vacantes.</p>
+</div>
+<button class="boton boton--primario" type="button">Publicar una vacante</button>
+</div>
+<ul class="resumen">
+<li class="dato-resumen">
+<span class="dato-resumen_numero">2</span><span class="dato-resumen_texto">Vacantes publicadas</span>
+</li>
+<li class="dato-resumen">
+<span class="dato-resumen_numero">1</span><span class="dato-resumen_texto">Vacante en pausa</span>
+</li>
+<li class="dato-resumen">
+<span class="dato-resumen_numero">5</span><span class="dato-resumen_texto">Solicitudes nuevas</span>
+</li>
+</ul>
+<ul class="lista-tarjetas">
+<li><article class="tarjeta-fila">
+<div class="tarjeta-fila_datos">
+<h2 class="tarjeta-fila_titulo">Auxiliar de recepción</h2>
+<p class="tarjeta-fila_fecha">Publicada el <time datetime="2026-10-10">10 de octubre de 2026</time></p>
+<p><strong>12 solicitudes recibidas</strong></p>
+</div>
+<div class="tarjeta-fila_lado"><p class="estatus estatus--publicada"><span class="solo-lectores">Estatus: </span>Publicada</p></div>
+<div class="tarjeta-fila_acciones">
+<a class="boton boton--primario" href="solicitudes-recibidas.html">Ver solicitudes<span class="solo-lectores"> de Auxiliar de recepción</span></a><button class="boton boton--secundario" type="button">Editar<span class="solo-lectores"> Auxiliar de recepción</span></button><button class="boton boton--secundario" type="button">Pausar<span class="solo-lectores"> Auxiliar de recepción</span></button><button class="boton boton--peligro" type="button">Cerrar<span class="solo-lectores"> Auxiliar de recepción</span></button>
+</div>
+</article></li>
+<li><article class="tarjeta-fila">
+<div class="tarjeta-fila_datos">
+<h2 class="tarjeta-fila_titulo">Auxiliar de enfermería</h2>
+<p class="tarjeta-fila_fecha">Publicada el <time datetime="2026-10-02">2 de octubre de 2026</time></p>
+<p><strong>8 solicitudes recibidas</strong></p>
+</div>
+<div class="tarjeta-fila_lado"><p class="estatus estatus--publicada"><span class="solo-lectores">Estatus: </span>Publicada</p></div>
+<div class="tarjeta-fila_acciones">
+<a class="boton boton--primario" href="solicitudes-recibidas.html">Ver solicitudes<span class="solo-lectores"> de Auxiliar de enfermería</span></a><button class="boton boton--secundario" type="button">Editar<span class="solo-lectores"> Auxiliar de enfermería</span></button><button class="boton boton--secundario" type="button">Pausar<span class="solo-lectores"> Auxiliar de enfermería</span></button><button class="boton boton--peligro" type="button">Cerrar<span class="solo-lectores"> Auxiliar de enfermería</span></button>
+</div>
+</article></li>
+<li><article class="tarjeta-fila">
+<div class="tarjeta-fila_datos">
+<h2 class="tarjeta-fila_titulo">Intendente</h2>
+<p class="tarjeta-fila_fecha">Publicada el <time datetime="2026-09-20">20 de septiembre de 2026</time></p>
+<p><strong>3 solicitudes recibidas</strong></p>
+</div>
+<div class="tarjeta-fila_lado"><p class="estatus estatus--pausa"><span class="solo-lectores">Estatus: </span>En pausa</p></div>
+<div class="tarjeta-fila_acciones">
+<a class="boton boton--primario" href="solicitudes-recibidas.html">Ver solicitudes<span class="solo-lectores"> de Intendente</span></a><button class="boton boton--secundario" type="button">Editar<span class="solo-lectores"> Intendente</span></button><button class="boton boton--secundario" type="button">Reactivar<span class="solo-lectores"> Intendente</span></button><button class="boton boton--peligro" type="button">Cerrar<span class="solo-lectores"> Intendente</span></button>
+</div>
+</article></li>
+<li><article class="tarjeta-fila">
+<div class="tarjeta-fila_datos">
+<h2 class="tarjeta-fila_titulo">Cocinero(a)</h2>
+<p class="tarjeta-fila_fecha">Publicada el <time datetime="2026-09-01">1 de septiembre de 2026</time></p>
+<p><strong>20 solicitudes recibidas</strong></p>
+</div>
+<div class="tarjeta-fila_lado"><p class="estatus estatus--cerrada"><span class="solo-lectores">Estatus: </span>Cerrada</p></div>
+<div class="tarjeta-fila_acciones">
+<a class="boton boton--primario" href="solicitudes-recibidas.html">Ver solicitudes<span class="solo-lectores"> de Cocinero(a)</span></a><button class="boton boton--secundario" type="button">Editar<span class="solo-lectores"> Cocinero(a)</span></button>
+</div>
+</article></li>
+</ul>
+</div></main>
+<footer class="pie"><div class="contenedor">
+<p class="pie__lema">Envejecer es vivir.</p>
+<p class="pie__texto">AMAC · asociAMayores A.C. — Bolsa de Trabajo</p>
+</div></footer>
+</body>
+</html>

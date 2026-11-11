@@ -1,0 +1,51 @@
+
+:root {
+  /* Colores */
+  --color-primario: #202945;
+  --color-primario-oscuro: #111a33;
+  --color-texto: #202945;
+  --color-texto-suave: #3a4361;
+  --color-fondo: #ffffff;
+  --color-fondo-suave: #eef6fa;
+  --color-azul-claro: #cae4ef;
+  --color-durazno: #fddaad;
+  --color-acento: #ff815c;      /* solo decorativo, no se usa para texto */
+  --color-foco: #c2410c;
+  --color-borde: #c9d0dc;
+  --color-borde-campo: #5b6580;
+  --color-exito: #14602f;
+  --color-exito-fondo: #e0f3e6;
+  --color-error: #a8231b;
+  --color-error-fondo: #fce8e6;
+  --color-deshabilitado: #dde1e8;
+  --color-deshabilitado-texto: #434c63;
+
+  /* Tipografía */
+  --fuente-base: "Work Sans", system-ui, sans-serif;
+  --fuente-titulos: "Libre Baskerville", Georgia, serif;
+  --texto-pequeno: 1.125rem; /* 18 px */
+  --texto-base: 1.25rem;     /* 20 px */
+  --texto-h3: 1.5rem;        /* 24 px */
+  --texto-h2: 1.625rem;      /* 26 px */
+  --texto-h1: 1.75rem;       /* 28 px en celular */
+
+  /* Espaciado */
+  --espacio-xs: 0.5rem;
+  --espacio-s: 0.75rem;
+  --espacio-m: 1rem;
+  --espacio-l: 1.5rem;
+  --espacio-xl: 2rem;
+  --espacio-xxl: 3rem;
+
+  /* Otros */
+  --radio: 0.75rem;
+  --radio-grande: 1rem;
+  --alto-boton: 3.5rem;      /* 56 px */
+  --sombra: 0 4px 12px rgba(32, 41, 69, 0.12);
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --texto-h1: 2.375rem;    /* 38 px en escritorio */
+  }
+}

@@ -1,0 +1,106 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; /* 16 px, así el texto en rem respeta el zoom del navegador */
+}
+
+body {
+  margin: 0;
+  padding-bottom: 6rem; /* espacio para la barra de pestañas en celular */
+  font-family: var(--fuente-base);
+  font-size: var(--texto-base);
+  line-height: 1.5;
+  color: var(--color-texto);
+  background: var(--color-fondo);
+  overflow-wrap: break-word;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 { font-size: var(--texto-h1); }
+h2 { font-size: var(--texto-h2); }
+
+h3 {
+  margin: 0;
+  font-size: var(--texto-h3);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+p { margin: 0; }
+
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+a { color: var(--color-primario); }
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+/* Foco visible al navegar con Tab */
+:focus-visible {
+  outline: 3px solid var(--color-foco);
+  outline-offset: 3px;
+}
+
+/* Enlace para saltar directo al contenido */
+.saltar-contenido {
+  position: absolute;
+  left: -9999px;
+  padding: 0.75rem 1rem;
+  background: var(--color-fondo);
+  font-weight: 600;
+  z-index: 100;
+}
+
+.saltar-contenido:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+/* Texto solo para lectores de pantalla */
+.solo-lectores {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Ícono genérico (SVG en línea) */
+.icono {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: none;
+}
+
+@media (min-width: 1024px) {
+  body { padding-bottom: 0; }
+}
