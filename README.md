@@ -2,9 +2,9 @@
 
 Proyecto final OT2026-WEB.
 
-- **Repositorio:** [pegar URL de GitHub]
-- **Sitio publicado:** [pegar URL de Vercel]
-- **Prototipo de Figma:** https://www.figma.com/design/IyhOp6WOIoBAq4GQbnnLjh
+- **Repositorio:** (https://github.com/Firedus/Proyecto-Final-desWeb)
+- **Sitio publicado:** (https://proyecto-final-desweb.vercel.app)
+- **Prototipo de Figma:** (https://www.figma.com/design/2dsxPtvnSnlVXsfGzjUHMI/AMAC-Bolsa-de-Trabajo---Prototipo-UI?node-id=0-1&t=cTw5ZSiES6MqYZh0-1)
 
 ## Integrantes y aportes
 
